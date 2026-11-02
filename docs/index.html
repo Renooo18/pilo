@@ -72,7 +72,7 @@ header.top {
 header.top.scrolled { border-bottom-color: var(--line); }
 .top .wrap { display: flex; align-items: center; gap: 16px; padding-block: 12px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 600 1.45rem var(--display); }
-.brand svg { width: 42px; height: auto; }
+.brand svg { width: 42px; height: 35px; }
 nav.links { display: flex; gap: 22px; margin-left: auto; font-weight: 600; font-size: .95rem; }
 nav.links a { text-decoration: none; color: var(--sub); }
 nav.links a:hover { color: var(--ink); }
@@ -95,7 +95,7 @@ nav.links a:hover { color: var(--ink); }
   .lang { margin-left: auto; }
   /* Kepala ringkas di HP */
   .top .wrap { padding-block: 8px; gap: 10px; }
-  .brand { font-size: 1.2rem; gap: 8px; } .brand svg { width: 32px; }
+  .brand { font-size: 1.2rem; gap: 8px; } .brand svg { width: 32px; height: 27px; }
   .lang button { padding: 5px 9px; } header.top .theme-btn { width: 32px; height: 32px; } header.top .theme-btn svg { width: 17px; height: 17px; }
 }
 
@@ -350,7 +350,7 @@ details p { color: var(--sub); padding-bottom: 16px; }
 
 /* Dukung */
 .support { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 28px; align-items: center; background: var(--card); border-radius: var(--r-lg); padding: 32px; }
-.support svg.mascot { width: 120px; }
+.support svg.mascot { width: 120px; height: 100px; }
 .support p { color: var(--sub); margin-top: 8px; }
 .support .cta { justify-content: flex-end; }
 @media (max-width: 760px) { .support { grid-template-columns: minmax(0, 1fr); text-align: center; justify-items: center; } .support .cta { justify-content: center; } }
@@ -554,7 +554,7 @@ header.top.open .menu-btn .i-x { display: block; }
 
 <header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="#hero"><svg aria-hidden="true"><use href="#pilo"/></svg>Pilo</a>
+    <a class="brand" href="#hero"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#pilo"/></svg>Pilo</a>
     <nav class="links" id="nav-links" aria-label="Bagian">
       <a href="#fitur"><span lang="id">Fitur</span><span lang="en">Features</span></a>
       <a href="#pilo-di-pil">Pilo</a>
@@ -941,7 +941,7 @@ header.top.open .menu-btn .i-x { display: block; }
   <section class="band" id="dukung">
     <div class="wrap">
       <div class="support">
-        <svg class="mascot" aria-hidden="true"><use href="#pilo"/></svg>
+        <svg class="mascot" viewBox="0 0 120 100" aria-hidden="true"><use href="#pilo"/></svg>
         <div>
           <h2><span lang="id">Dibuat oleh satu orang, untuk dipakai sehari-hari.</span><span lang="en">Made by one person, for everyday use.</span></h2>
           <p><span lang="id">Ada yang aneh? Laporkan, supaya Pilo makin rapi di HP-mu. Suka Pilo? Traktir pembuatnya kopi.</span><span lang="en">Something off? Report it so Pilo gets better on your phone. Like Pilo? Buy its maker a coffee.</span></p>
