@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="id">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pilo</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Pilo: pil kecil di sekitar kamera HP Android yang menampilkan musik, chat, ojek, pembayaran, dan timer.">
@@ -83,7 +83,13 @@ nav.links a:hover { color: var(--ink); }
   border: 0; background: none; color: var(--sub); padding: 6px 11px; border-radius: 999px; cursor: pointer; font: inherit;
 }
 .lang button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
-@media (max-width: 760px) { nav.links { display: none; } .lang { margin-left: auto; } }
+@media (max-width: 760px) {
+  nav.links { display: none; } .lang { margin-left: auto; }
+  /* Kepala ringkas di HP */
+  .top .wrap { padding-block: 8px; gap: 10px; }
+  .brand { font-size: 1.2rem; gap: 8px; } .brand svg { width: 32px; }
+  .lang button { padding: 5px 9px; } header.top .theme-btn { width: 32px; height: 32px; } header.top .theme-btn svg { width: 17px; height: 17px; }
+}
 
 /* ---------- Tombol ---------- */
 .btn {
